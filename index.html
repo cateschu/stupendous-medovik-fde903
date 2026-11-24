@@ -778,6 +778,7 @@ function publish(btn){
   });
 }
 
+try{var _dl=(new URLSearchParams(location.search)).get("p")||(location.hash||"").replace(/^#(p=)?/,"");if(_dl&&prod(_dl))state.view=_dl;}catch(e){}
 render();
 
 if(window.claude&&window.claude.use){
